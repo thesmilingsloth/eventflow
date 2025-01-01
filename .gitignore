@@ -1,0 +1,22 @@
+# Dependencies
+node_modules
+.pnpm-store
+
+# Build outputs
+dist
+lib
+coverage
+
+# IDE and OS files
+.DS_Store
+.idea
+.vscode
+*.log
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.*
+
+# Test coverage
+coverage 

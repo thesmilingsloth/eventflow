@@ -1,0 +1,43 @@
+{
+  "name": "eventflow",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Type-safe event broker for frontend applications",
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --filter=./packages/* run build",
+    "test": "pnpm --filter=./packages/* run test",
+    "lint": "biome check .",
+    "format": "biome format . --write",
+    "publish-packages": "pnpm build && pnpm -r publish --access public",
+    "version-packages": "pnpm -r version"
+  },
+  "keywords": [
+    "events",
+    "eventbus",
+    "typescript",
+    "frontend",
+    "react",
+    "middleware",
+    "error-handling",
+    "event-broker",
+    "event-emitter",
+    "event-handler",
+    "event-listener",
+    "event-middleware",
+    "event-state",
+    "event-map",
+    "event-driven",
+    "event-driven-architecture",
+    "event-driven-design",
+    "event-driven-development",
+    "event-driven-systems"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "1.5.3",
+    "typescript": "^5.3.3",
+    "vitest": "^1.3.1"
+  }
+}

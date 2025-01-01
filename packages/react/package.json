@@ -1,0 +1,48 @@
+{
+  "name": "@thesmilingsloth/eventflow-react",
+  "version": "0.0.3",
+  "description": "React integration for EventFlow event broker",
+  "keywords": [
+    "react",
+    "events",
+    "typescript",
+    "hooks"
+  ],
+  "author": "Smiling Sloth",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thesmilingsloth/eventflow.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm,cjs --dts --external react --tsconfig tsconfig.json",
+    "test": "vitest"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0"
+  },
+  "dependencies": {
+    "@thesmilingsloth/eventflow-core": "^0.0.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "tsup": "^8.0.2"
+  }
+}
